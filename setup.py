@@ -1,7 +1,7 @@
 from setuptools import setup
 import os
 
-VERSION = "0.18.1"
+VERSION = "0.0.1"
 
 
 def get_long_description():
@@ -13,16 +13,16 @@ def get_long_description():
 
 
 setup(
-    name="datasette-cluster-map",
-    description="Datasette plugin that shows a map for any data with latitude/longitude columns",
+    name="datasette-kepler-map",
+    description="Datasette plugin that shows a map for any data with latitude/longitude columns using the Kepler Library",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
     author="Simon Willison",
-    url="https://github.com/simonw/datasette-cluster-map",
+    url="https://github.com/dav43/datasette-kepler-map",
     project_urls={
-        "Issues": "https://github.com/simonw/datasette-cluster-map/issues",
-        "CI": "https://github.com/simonw/datasette-cluster-map/actions",
-        "Changelog": "https://github.com/simonw/datasette-cluster-map/releases",
+        "Issues":https://github.com/dav43/datasette-kepler-map/issues",
+        "CI": "https://github.com/dav43/datasette-kepler-map/actions",
+        "Changelog": "https://github.com/dav43/datasette-kepler-map/releases",
     },
     license="Apache License, Version 2.0",
     classifiers=[
@@ -30,10 +30,10 @@ setup(
         "License :: OSI Approved :: Apache Software License",
     ],
     version=VERSION,
-    packages=["datasette_cluster_map"],
-    entry_points={"datasette": ["cluster_map = datasette_cluster_map"]},
+    packages=["datasette_kepler_map"],
+    entry_points={"datasette": ["cluster_map = datasette_kepler_map"]},
     package_data={
-        "datasette_cluster_map": [
+        "datasette_kepler_map": [
             "static/*.js",
             "static/*.css",
         ]
